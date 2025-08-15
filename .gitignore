@@ -1,0 +1,85 @@
+# -----------------------------
+# Go build artifacts & caches
+# -----------------------------
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.md
+
+# Build output directories
+bin/
+build/
+dist/
+out/
+
+# Go test/coverage
+*.out
+coverage/
+cover.*
+profile.*
+
+# Go tool caches (not usually committed)
+.go-build/
+*.prof
+*.pprof
+
+# Module stuff
+# Ignore vendor/ if you don't vendor dependencies.
+# If you run `go mod vendor` and want it in git, remove the next line.
+vendor/
+
+# -----------------------------
+# Fiber / Dev tooling
+# -----------------------------
+# Air (live reload) temp dir (default)
+tmp/
+.air/
+
+# Swagger generated docs (if you generate with swag)
+docs/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+*.pid
+
+# Database / runtime files (adjust as needed)
+*.db
+*.sqlite
+storage/
+uploads/
+.cache/
+data/
+
+# -----------------------------
+# Editors / IDEs
+# -----------------------------
+# VS Code
+.vscode/
+.history/
+
+# GoLand / IntelliJ
+.idea/
+*.iml
+
+# macOS / OS cruft
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux / editor swap
+*~
+*.swp
+*.swo
+
+# Docker (ignore local-only overrides)
+docker-compose.override.yml
